@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using FMODUnity;
 
@@ -118,7 +119,7 @@ public class Footsteps : MonoBehaviour
     private void PlayLanding()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 0.5f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, distToGround + 1.5f))
         {
             string surfaceTag = hit.collider.tag;
             PlaySurfaceSound(landSoundInstance, landEvent, surfaceTag);
@@ -145,16 +146,16 @@ public class Footsteps : MonoBehaviour
             case "Stone":
             case "Inside_stone":
             case "Outside": // "Outside" również używa parametru "Stone"
-                surfaceParameter = "Stone";
+                surfaceParameter = "stone";
                 break;
             
             case "Wood":
             case "Inside_wood":
-                surfaceParameter = "Wood";
+                surfaceParameter = "wood";
                 break;
 
             case "Bed":
-                surfaceParameter = "Bed";
+                surfaceParameter = "wood";
                 break;
         }
 
@@ -164,7 +165,7 @@ public class Footsteps : MonoBehaviour
             soundInstance = RuntimeManager.CreateInstance(eventRef);
             soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
             // Ustawia parametr FMOD na podstawie ustalonej wartości.
-            soundInstance.setParameterByNameWithLabel("Footsteps_surface", surfaceParameter); 
+            soundInstance.setParameterByNameWithLabel("footsteps_surface", surfaceParameter); 
             soundInstance.start();
             soundInstance.release();
         }
