@@ -4,5 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 64e6f52e07064e74285e48c1f819831b
+  - enabled: 1
+    path: Assets/FantasyEnvironments/Environments/Scenes/DemoScene_edit.unity
+    guid: 63fb3e28c0e6dff44b641a06f56ac6b8
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

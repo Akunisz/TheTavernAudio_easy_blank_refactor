@@ -2594,7 +2594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f4ed2e91580f4459a40df16f56ba56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalMuteActive: 1
+  globalMuteActive: 0
   musicMuteActive: 0
   tavernMuteActive: 0
   outsideMuteActive: 0

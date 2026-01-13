@@ -219,7 +219,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 1005729141866679855}
   cacheVersion: 131856
-  cacheTime: 639035769937191324
+  cacheTime: 639039191878320712
   SerializableEventsDict:
   - key: event:/tawerna 2
     index: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   Path: Assets/Audio-pliki/tawernadrzwiect/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639035769937191324
+  lastModified: 639039191878320712
   FileSizes:
   - Name: Desktop
     Value: 1782
@@ -385,7 +385,7 @@ MonoBehaviour:
   Path: Assets/Audio-pliki/tawernadrzwiect/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639035769937174682
+  lastModified: 639039191878310714
   FileSizes:
   - Name: Desktop
     Value: 7683488
